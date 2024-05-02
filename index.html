@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Online food ordering</title>
+</head>
+<style>
+	body{
+		font-family: 'Ubuntu Mono', monospace;
+	}
+	.viewport{
+		border: 2px solid black;
+	}
+	.top{
+		height: 55px;
+		text-align: center;
+		color: red;
+        font-weight: bold;
+		font-size: 60px;
+		font-family: 'Ubuntu Mono', monospace;
+		margin: 0px 0px;
+		text-shadow: 4px 6px 5px black;
+	}
+	.top1{
+		height: 40px;
+		margin: 0px 0px;
+		font-weight: bold;
+		text-align: center;
+		color: black;
+		font-size: 30px;
+		font-family: 'Ubuntu Mono', monospace;
+	}
+
+	.navbar{
+        height: 120px;
+		margin: -6px 0px;
+		border: 2px solid black;
+		border-radius: 4px;
+		text-align: center;
+		background-color: grey;
+		padding: 0px 0px;
+	}
+	.navbar img{
+		width: 100px;
+		text-align: center;
+	}
+	.navcontent{
+		display: inline-block;
+	}
+
+	ul li{
+		text-align: center;
+		display: inline-block;
+		padding: 0px 18px;
+	}
+    ul li a{
+    	text-decoration: none;
+    	color: white;
+    	font-size: 20px;
+    	font-weight: bold;
+    }
+    ul li :hover{
+    	background-color: tomato;
+    	border-radius: 10px;
+    }
+
+	.container1{
+    	font-family: 'Belanosima', sans-serif;
+       	padding: 200px 4px;
+    	background: url(img/f1.png);
+    	background-size: 1300px;
+    	height: 10px;
+    	margin: 0px 10px;
+	}
+    #row1{
+    	text-shadow: 4px 6px 5px black;
+    	top: 0px;
+    	font-size: 50px;
+    	text-align: center;
+    	color: tomato;
+    	margin-top: -183px;
+    	font-weight: bold;
+    }
+
+    .btn{
+    	margin: top 15px;
+    	background-color: yellow;
+    	border: 2px solid white;
+    	border-radius: 4px;
+    	font-weight: bold;
+    	font-size: 20px;
+    }
+    .btn:hover{
+    	cursor: pointer;
+    	background-color: tomato;
+    }
+
+    .container2{
+        display: flex;
+        text-align: center;
+        justify-content: space-evenly;
+    }
+    button{
+    	margin: 0px 0px;
+    	text-align: center;
+    }
+
+    #row2{
+    	justify-content: center;
+     	align-items: flex-end;
+     	box-shadow: 2px 7px 14px 19px;
+     	border-radius: 40px;
+    }
+    #row2::before{
+    	content: '';
+    	position: absolute;
+        top: 0px;
+        left: 0px;
+        z-index: -1;
+        border-radius: 30px;
+    }
+    .container2 #row2 img{
+    	width: 22vw;
+    	height: 26vh;
+    }
+
+    #row3{
+    	justify-content: center;
+     	align-items: flex-end;
+     	box-shadow: 2px 7px 14px 19px;
+     	border-radius: 40px;
+    }
+    #row3::before{
+    	content: '';
+        position: absolute;
+    	top:0px;
+    	left:0px;
+    	z-index: -1;
+    	border-radius: 40px;
+    }
+    .container2 #row3 img{
+    	width: 22vw;
+   		height: 26vh;
+    }
+
+    .top3{
+    	color: red;
+    	margin-top: 0px;
+    	margin-bottom: 14px;
+    	text-align: center;
+    	font-size: 40px;
+    	font-weight: bold;
+    	top: 0px;
+    	text-shadow: 4px 4px 4px black;
+    }
+    .container3{
+    	display: flex;
+    	justify-content: space-evenly;
+    }
+   
+    #row4{
+    	justify-content: center;
+     	align-items: flex-end;
+     	box-shadow: 2px 7px 16px 19px;
+     	border-radius: 40px;
+    }
+    #row4::before{
+    	content: '';
+        position: absolute;
+    	top:0px;
+    	left:0px;
+    	z-index: -1;
+    	border-radius: 40px;
+    }
+    .container2 #row4 img{
+    	width: 20vw;
+   		height: 10vh;
+    }
+
+    #row5{
+    	justify-content: center;
+     	align-items: flex-end;
+     	box-shadow: 2px 7px 16px 19px;
+     	border-radius: 40px;
+    }
+    #row5::before{
+    	content: '';
+        position: absolute;
+    	top:0px;
+    	left:0px;
+    	z-index: -1;
+    	border-radius: 40px;
+    }
+    .container2 #row5 img{
+    	width: 20vw;
+   		height: 10vh;
+    }
+
+    #row6{
+    	justify-content: center;
+     	align-items: flex-end;
+     	box-shadow: 2px 7px 16px 19px;
+     	border-radius: 40px;
+    }
+    #row6::before{
+    	content: '';
+        position: absolute;
+    	top:0px;
+    	left:0px;
+    	z-index: -1;
+    	border-radius: 40px;
+    }
+    .container2 #row6 img{
+    	width: 20px;
+   		height: 10px;
+    }
+
+    #row4, #row5, #row6{
+    	margin: 0px 0px;
+    	text-align: center;
+    }
+    footer{
+    	margin-top: 30px;
+    	text-align: center;
+    }
+</style>
+<body>
+	<header class="viewport">
+		<h1 class="top">Online</h1>
+		<h2 class="top1">Foodshop</h2>
+	</header>
+	<nav class="navbar">
+		<img src="img/logof.jpg">
+        <div>
+			<ul class="navcontent">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Menu</a></li>
+			    <li><a href="contact.html">Contact us</a></li>
+			</ul>
+		</div>
+    </nav>
+	<div class="container1">
+        <div id="row1">
+          	Welcome to online food shop
+          	<div><button class="btn">ORDER NOW</button></div>
+        </div>
+        
+        <div class="container2">
+            <div id="row2">
+            	<img src="img/chef.jpg">
+            	<div><button class="btn">Prices</button></div>
+       		</div>
+        	<div id="row3">
+        		<img src="img/f2.jpg">
+        		<div><button class="btn">Specials</button></div>
+        	</div>
+        </div>
+	</div>
+	<div>
+    <h1 class="top3">Featured Products</h1>
+	<div class="container3">
+		<div id="row4">
+			<img src="img/f3.png">
+			<div><button class="btn">ORDER NOW</button></div>
+		</div>
+		<div id="row5">
+			<img src="img/f4.png">
+			<div><button class="btn">ORDER NOW</button></div>
+		</div>
+		<div id="row6">
+			<img src="img/f5.png">
+			<div><button class="btn">ORDER NOW</button></div>
+		</div>
+	</div>
+	</div>
+	<footer>Copyright © 2020-2021 OnlineFoodShop.
+           All Rights are reserved</footer>
+</body>
+</html>

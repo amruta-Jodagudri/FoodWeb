@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>contact us</title>
+</head>
+<style>
+	.contactus{
+		width:100vw;
+        height:100vh;
+		align-items: center;
+		display: flex;
+		flex-direction: column;
+		background-color:gray;
+	}
+	.form-shape select, .form-shape textarea,.form-shape input{
+		padding: 0.5rem;
+		width: 92%;
+	}
+	::placeholder{
+		color: gray;
+	}
+</style>
+<body>
+	<div class="contactus">
+		<h2>Contact Us</h2>
+		<form action="#">
+			<div class="form-shape">
+				<label for="query">
+					Type your query
+				</label>
+				<select name="myquery" id="query">
+					<option value="sel" selected>
+						Select
+					</option>
+					<option value="ord">
+						Order related query
+					</option>
+					<option value="site">
+						Site related query
+					</option>
+					<option value="fed">
+						Complaint related query
+					</option>
+					<option value="others">
+						Others
+					</option>
+				</select>
+			</div>
+			<div class="form-shape">
+				<label for="name">Name</label>
+				<input type="text" name="myname"
+				id="name" placeholder="Enter your Name">
+			</div>
+			<div class="form-shape">
+				<label for="email">Email Id</label>
+				<input type="email" name="mymail"
+				id="Email" placeholder="Enter your Email">
+			</div>
+			<div class="form-shape">
+				<label for="phone">Phone number</label>
+				<input type="phone" name="myphone"
+				id="phone" placeholder="Enter your Phone number">
+			</div>
+			<div class="radio">
+				Are you member of online food shop?
+				yes <input type="radio" name="eligibility">
+				No <input type="radio" name="eligibility">
+			</div>
+			<div class="form-shape">
+				<label for="message">
+					Ellaborate your query
+				</label>
+				<textarea name="mesg" id="message"
+				cols="30" rows="10">
+				</textarea>
+            </div>
+				<input type="submit" name="Submit">
+				<input type="Reset" name="Reset">
+		</form>
+	</div>
+</body>
+</html>
